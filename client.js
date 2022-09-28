@@ -22,9 +22,31 @@ const connect = function (data) {
     conn.write("Name: BOX");
   });
 
+  conn.on("connect", () => {
+    conn.write("Move: up");
+  });
+
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 1000);
+    // setTimeout(() => {
+    //   conn.write("Move: right");
+    // }, 3000);  });
+
   return conn;
 };
 
 module.exports = {
   connect
+};
+
+
+const startDishwasher = () => {
+
+  console.log("Dishwasher started");
+
+  setTimeout(() => {
+    console.log("Dishwasher finishes");
+  }, 8000);
+
 };
