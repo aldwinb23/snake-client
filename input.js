@@ -28,9 +28,16 @@ const handleUserInput = function (key) {
   if (key === "d") {
     connection.write("Move: right");
   }
+  if (key === "m") {
+    connection.write(`Say: Go long!!`);
+  }
   
 };
 
 module.exports = {
   setupInput
 };
+
+// client.on("data", (data) => {
+//   console.log("Message from client: ", data);
+// });

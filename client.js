@@ -22,10 +22,6 @@ const connect = function (data) {
     conn.write("Name: BOX");
   });
 
-  conn.on("connect", () => {
-    conn.write("Move: up");
-  });
-
   return conn;
 };
 
