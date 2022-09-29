@@ -37,7 +37,3 @@ const handleUserInput = function (key) {
 module.exports = {
   setupInput
 };
-
-// client.on("data", (data) => {
-//   console.log("Message from client: ", data);
-// });
